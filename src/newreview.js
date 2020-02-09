@@ -107,37 +107,19 @@ export default class CreateReview extends React.Component<{}, State> {
           <Row>
             <Col sm="12" md="12">
               <div>
-                <h3>Add New Place</h3><hr/> <br />
-                <Card>
-                  <CardHeader>Enter The Details Of Place</CardHeader>
-                  <CardBody>
-                    <CardTitle>A Catchy Title</CardTitle>
-                    <FormInput name="subject" placeholder="Header" value={this.state.subject} onChange={this.handleInput} />
+                <h3>Start New Discussion</h3><hr/> <br />
+                    <h4>Title</h4>
+                    <FormInput name="subject" placeholder="Title" value={this.state.subject} onChange={this.handleInput} />
                     <br />
-                    <CardTitle>Why is it Awesome </CardTitle>
-                    <FormTextarea name="details" value={this.state.details} onChange={this.handleInput} placeholder="Enter Place Details"/>
+                    <h4>Write About It</h4>
+
+                    <FormTextarea name="details" value={this.state.details} onChange={this.handleInput} placeholder="Enter  Details" />
+                    
+                   
                     <br />
-                    <CardTitle>Where Is It</CardTitle>
-                    <Map
-                center={this.state.latlng}
-                length={4}
-                onClick={this.handleClick}
-                onLocationfound={this.handleLocationFound}
-                ref={this.mapRef}
-                zoom={13}>
-                <TileLayer
-                  attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                {marker}
-                  </Map>
                     <br />
-                    <CardTitle>Give Us Some Images</CardTitle>
-                    <FormInput type="file" theme="danger" onChange={this.captureFile} placeholder="Upload an Image" className="form-control"/>
-                    <br /> <br />
                     <center><Button theme="success" onClick={this.runExample}>Submit</Button></center>
-                  </CardBody>
-                </Card>
+                  
               </div>
             </Col>
           </Row>

@@ -107,19 +107,9 @@ export default class CreateToken extends React.Component<{}, State> {
       </Marker>
     ) : null
     return(
-      <div>
-        <Container className="main-container">
-          <Row>
-            <Col sm="12" md="12">
+        
               <div>
-                <h3>Get New Token</h3><hr/> <br />
-                <Card>
-                  <CardHeader>Enter The Details Of Place</CardHeader>
-                  <CardBody>
-                    <CardTitle>Name of The Place</CardTitle>
-                    <FormInput name="name" placeholder="Header" value={this.state.name} onChange={this.handleInput} />
-                    <br />
-                    <CardTitle>Where Is It</CardTitle>
+               
                     <Map
                 center={this.state.latlng}
                 length={4}
@@ -133,18 +123,9 @@ export default class CreateToken extends React.Component<{}, State> {
                 />
                 {marker}
                   </Map>
-                    <br />
-                    <CardTitle>Give Us Some Image</CardTitle>
-                    <FormInput type="file" theme="danger" onChange={this.captureFile} placeholder="Upload an Image" className="form-control"/>
-                    <br /> <br />
-                    <center><Button theme="success" onClick={this.runExample}>Submit</Button></center>
-                  </CardBody>
-                </Card>
+                   
               </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+           
     );
   }
 }

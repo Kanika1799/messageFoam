@@ -57,25 +57,19 @@ export default class NavExample extends React.Component {
 
         <Collapse open={this.state.collapseOpen} navbar>
           <Nav navbar>
-            <NavItem>
-              <NavLink onClick={this.navlink} active to="/" className="nav-link">
-                Home
-              </NavLink>
-            </NavItem>
+           
             <NavItem>
               <NavLink onClick={this.navlink} to="/new-review" className="nav-link">
-              Add Place
-              </NavLink>
+Start New Discussion              </NavLink>
             </NavItem>
             <NavItem>
               <NavLink onClick={this.navlink} to="/places-near" className="nav-link">
-              Places Near Me
+              Discussion Forum
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink onClick={this.navlink} to="/new-token" className="nav-link">
-              Get New Token
-              </NavLink>
+People Around you              </NavLink>
             </NavItem>
           </Nav>
 
