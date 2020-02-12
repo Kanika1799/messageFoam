@@ -85,7 +85,7 @@ export default class CreateReview extends React.Component<{}, State> {
 
   handleInput(event) {
     const target = event.target;
-    if (target.name == "subject"){
+    if (target.name === "subject"){
       this.setState(Object.assign({}, this.state, {subject: target.value}));
     }
     else if (target.name == "details") {

@@ -154,7 +154,7 @@ class TrackHistory extends React.Component {
         <br />
         <br />
       <hr />
-        <h5>Places You have Added</h5>
+        <h5>Your posts</h5>
         <Row>
           <ListGroup>
         {listItems}
@@ -162,13 +162,7 @@ class TrackHistory extends React.Component {
         </Row>
 
         <br/ >
-          <hr />
-            <h5>Your Kudos</h5>
-            <Row>
-
-            {kudosList}
-
-            </Row>
+         
         <Row>
 
         </Row>

@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+} from "react-router-dom";
+
 import { Collapse,Container,Row, FormInput, Button,Col, Card,CardHeader,CardTitle,CardBody,FormTextarea,FormSelect,Badge } from "shards-react";
 import { FaComment, FaEnvelope, FaThumbsUp, FaThumbsDown} from 'react-icons/fa';
 import Img from 'react-image'
@@ -97,7 +103,10 @@ class CreatedArtifacts extends React.Component {
       <br/ >
       <Card>
       <CardBody>
-       <h3>Topic of the discussion</h3>
+       <h3><Link to = {{
+                  pathname: '/post',
+                  
+                }} >Topic of the discussion</Link></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
         <Container>
           <Row>
@@ -128,7 +137,10 @@ class CreatedArtifacts extends React.Component {
     <br />
     <Card>
       <CardBody>
-       <h3>Topic of the discussion</h3>
+      <h3><Link to = {{
+                  pathname: '/post',
+                  
+                }} >Topic of the discussion</Link></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
         <Container>
           <Row>

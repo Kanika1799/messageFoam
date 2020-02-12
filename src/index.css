@@ -1,7 +1,14 @@
 .main-container {
   padding: 5%;
 }
-
+body {
+  background-image: linear-gradient(to right,#fa7681 ,#a1363f,#7a1931 );
+  max-width: 100%;
+  max-height: 100%;
+  background-repeat: repeat-y;
+  background-size: cover;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .container {
   max-width: 90% !important;
 }
@@ -15,7 +22,9 @@
 }
 
 .navbar-class{
-  background-color: #5a6d84 !important;
+  background-color:  transparent !important;
+  font-size: 24px;
+  font-weight: bolder;
 }
 
 .badge {

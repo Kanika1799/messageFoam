@@ -1,12 +1,7 @@
-// Imports -----------------------------
 import React from 'react';
 import ReactDOM from 'react-dom';
-import getWeb3 from "./utils/getWeb3";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
-
-import {Container, Row, Col, FormInput, Button ,Card,CardHeader,CardTitle,CardBody,CardFooter } from "shards-react";
 import {
   Route,
   HashRouter
@@ -18,12 +13,7 @@ import CreateReview from './newreview';
 import CreateToken from './newtoken';
 import PlaceNear from './placesnear';
 import Profile from './Profile';
-
-import {config} from './utils.js'
-
-const NodeCache = require( "node-cache" );
-const myCache = new NodeCache();
-// -------------------------------------
+import Post from './post'
 
 class Main extends React.Component {
   state = { storageValue: 0, web3: null, accounts: null, contract: null };
@@ -37,6 +27,7 @@ class Main extends React.Component {
         <Route path="/new-review" component={CreateReview}/>
         <Route path="/new-token" component={CreateToken}/>
         <Route path="/profile" component={Profile}/>
+        <Route path="/post" component={Post}/>
         
 
       </HashRouter>
